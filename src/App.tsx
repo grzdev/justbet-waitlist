@@ -11,7 +11,7 @@ function App() {
       {/* Navbar */}
       <Flex 
         as="nav" 
-        
+        className="fade-in"
         align="center"
       >
         <Image 
@@ -24,12 +24,12 @@ function App() {
       <Flex flexDir={{base: "column", md: "row"}} justifyContent="space-between" alignItems={{base: "center", md: "flex-start"}}>
 
         <Flex mt={{base: "5rem", md: "9rem"}} flexDir="column" gap="1rem" alignItems="center">
-          <Heading fontSize={{base: '2.4rem', md: '3.6rem'}} color="white" fontWeight={700} textAlign="center" w={{base:"100%", md:"43rem"}} lineHeight={{base: '1.2', md: '1'}}>
+          <Heading className="slide-up" fontSize={{base: '2.4rem', md: '3.6rem'}} color="white" fontWeight={700} textAlign="center" w={{base:"100%", md:"43rem"}} lineHeight={{base: '1.2', md: '1'}}>
             Bet Directly from Non-Custodial Smart Wallets
           </Heading>
 
           {/* Gradient Border Button */}
-          <Flex w="fit-content" mt="1rem">
+          <Flex w="fit-content" mt="1rem" className="slide-up-delayed">
             <div className="container">
               <button className="button">
                 Join Waitlist
@@ -39,19 +39,20 @@ function App() {
           </Flex>
         </Flex>
 
-        <Image src={mascot} alt="Mascot" boxSize={{base:"20rem", md:"30rem"}} mt={{base: "2rem", md: "0"}} />
+        <Image className="fade-in-delayed" src={mascot} alt="Mascot" boxSize={{base:"20rem", md:"30rem"}} mt={{base: "2rem", md: "0"}} />
       </Flex>
       
       {/* Footer */}
       <Flex 
-        as="footer" 
+        as="footer"
+        className="fade-in-delayed" 
         position={{base:"relative", md:"absolute" }}
         bottom="0" 
         left="0" 
         right="0" 
         px={{ base: '1rem', md: '2rem' }} 
         py={{ base: "0rem", md: "1rem" }}
-        mt={{ base: "3rem", md: "0rem" }}
+        mt={{ base: "5rem", md: "0rem" }}
         justifyContent="space-between"
         alignItems="center"
         flexDir={{ base: 'row', md: 'row' }}

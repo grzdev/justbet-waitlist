@@ -41,7 +41,7 @@ export const SuccessModal = ({ open, onOpen, onClose }: SuccessModalProps) => {
             <DialogBody pb="3rem" px="2rem" pt="3rem">
               <Flex flexDir="column" alignItems="center" gap="1.5rem">
                 <FiCheckCircle size={64} color="#00ff00" />
-                <Text color="white" fontSize="1.5rem" fontWeight={600} textAlign="center">
+                <Text color="white" fontSize="1.5rem" lineHeight="1.2" fontWeight={600} textAlign="center">
                   Thank you for joining the waitlist!
                 </Text>
               </Flex>
